@@ -1,97 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tugas Perancangan Website 1</title>
+  <title>Tugas Perancangan Website 3 | 162410101028 | Novica Sinta Wida</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="siswa.png" alt="Gambar" width="30%" align="left">
-    <h1 align="center">Form Pendaftaran Murid Baru</h1>
-    <h1 align="center">SDN 1 MARGA MULYA</h1>
-    <hr width="50%" align="center">
+    <div id="bg-form"> 
+        <p id="square"></p>
+        <div class="form">
+            <h1>PENDAFTARAN SISWA BARU
+                <br>
+                SDN MARGA MULYA 1
+            </h1>
+        <form>
+          <label>Nama Lengkap</label>
+            <input type="text" name="nama" placeholder="Masukkan nama siswa" required />
+          
+          <label>Jenis Kelamin</label>
+          <br>
+            <input type="radio" name="l">Laki-laki
+            <input type="radio" name="p">Perempuan
 
-    <h3 align="center">Novica Sinta Wida_162410101028</h3>
-
-    <br>
-
-    <table align="center">
-        <tr>
-            <td valign="top">Nama Lengkap</td>
-            <td>
-            <input type="text" name="nama" placeholder="Masukan nama siswa"><br>
-            <i><font size = "2">*Harus diisi</font></i>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top">Jenis Kelamin</td>
-            <td>
-                <input type="radio" name="l">Laki-laki<br/>
-                <input type="radio" name="p">Perempuan
-                <br><i><font size="2">*Harus diisi</font></i>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top">Tempat Lahir</td>
-            <td>
-                <select>
-                    <option>Pilih</option>
-                    <option>Bali</option>
-                    <option>Bogor</option>
-                    <option>Denpasar</option>
-                    <option>Jakarta</option>
-                    <option>Malang</option>
-                    <option>Ponorogo</option>
-                    <option>Surabaya</option>
-                    <option>Yogjakarta</option>
-                </select>
-                <br><i><font size="2">*Harus diisi</font></i>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top">Tanggal Lahir</td>
-            <td>
-               <input type="date" placeholder="Tanggal lahir"><br><i><font size="2">*Harus diisi</font></i>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top">Alamat</td>
-            <td><input type="text" name="alamat" placeholder="Masukan alamat"><br><i><font size="2">*Harus diisi</font></i></td>
-        </tr>
-
-        <tr>
-            <td valign="top">Agama</td>
-            <td>
-                <select>
-                    <option>Pilih</option>
-                    <option>Islam</option>
-                    <option>Kristen</option>
-                    <option>Hindu</option>
-                    <option>Budha</option>
-                    <option>Katolik</option>
-                </select><br><i><font size="2">*Harus diisi</font></i>
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top">Nama Orang Tua</td>
-            <td><input type="text" name="ortu" placeholder="Masukan nama ayah/ibu"><br><i><font size="2">*Harus diisi</font></i></td>
-        </tr>
-
-        <tr>
-            <td valign="top">Riwayat Penyakit</td>
-            <td><textarea placeholder="Tuliskan riwayat penyakit yang pernah diderita" cols="30" rows="5"></textarea></td>
-        </tr>
-
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td><input type="submit" name="submit" value="Daftar"/></td>
-        </tr>
+            <br><br>
         
-    </table>
-      
+          <select required>
+            <option value=""selected disabled hidden>Tempat Lahir</option>
+            <option>Bali</option>
+            <option>Bogor</option>
+            <option>Denpasar</option>
+            <option>Jakarta</option>
+            <option>Malang</option>
+            <option>Ponorogo</option>
+            <option>Surabaya</option>
+            <option>Yogjakarta</option>
+          </select>
+
+          <label>Tanggal Lahir</label>
+          <input type="date" name="tanggal" placeholder="Masukkan tanggal lahir">
+
+          <br><br>
+
+          <label>Alamat</label>
+          <input type="text" name="alamat" placeholder="Masukkan alamat" required />
+
+          <select required>
+            <option value=""selected disabled hidden>Agama</option>
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Hindu</option>
+            <option>Budha</option>
+            <option>Katolik</option>
+          </select>
+
+          <label>Nama Orang Tua</label>
+          <input type="text" name="ortu" placeholder="Masukkan nama ayah/ibu" required />
+
+          <label>Riwayat Penyakit</label>
+          <textarea placeholder="Tuliskan riwayat penyakit yang pernah diderita" required ></textarea>
+          <input type="submit" name="daftar" value="DAFAR" />
+          </form>
+        </div>
+        
+        <div class="right"> <!-- div Kanan -->
+          <img src="siswa.png">
+        </div>
+
+    </div>
 </body>
 </html>
